@@ -1,7 +1,4 @@
-// import { StatusBar } from 'expo-status-bar';
 import React, { Component } from "react";
-
-// import React from 'react';
 import { 
   StyleSheet,
   Image, 
@@ -14,7 +11,7 @@ import {
   ScrollView,
  } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import Category from './components/explore/Category';
+import Category from '../pages/Category';
 
 
 class Home extends React.Component{
@@ -59,8 +56,8 @@ class Home extends React.Component{
               </Text>
               <View style={{height: 130, marginTop: 20}}>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-                  <Category imageUri={require('../assets/Vision_Tracker_Poster.png')}
-                  name="Vision Tracker"/>
+                 <Category imageUri={require('../assets/Vision_Tracker_Poster.png')}
+                  />
                   <Category imageUri={require('../assets/CV_poster.png')}
                   name="Sample CV Template"/>
                   <Category imageUri={require('../assets/Concept_Note_Poster.png')}
@@ -133,7 +130,7 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#949494',
     justifyContent: 'center',
     alignItems: 'center',
   },

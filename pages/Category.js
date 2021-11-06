@@ -16,9 +16,9 @@ class Category extends Component {
                         style={{ flex: 1, width: null, height: null, resizeMode: 'cover' }}
                     />
                 </View>
-                <View style={{ flex: 1, paddingLeft: 10, paddingTop: 10, backgroundColor: 'grey' }}>
+                {/* <View style={{ flex: 1, paddingLeft: 10, paddingTop: 10, backgroundColor: 'grey' }}>
                     <Text>{this.props.name}</Text>
-                </View>
+                </View> */}
             </View>
         );
     }
