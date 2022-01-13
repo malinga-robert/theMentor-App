@@ -10,7 +10,7 @@ import {
   SafeAreaView,
     Linking 
 } from "react-native";
-import SearchRes from "../pages/SeachBar/SearchRes";
+import SearchRes from "../screens/SeachBar/SearchRes";
 
 const ResourcesScreen = ({navigation}) =>{
   

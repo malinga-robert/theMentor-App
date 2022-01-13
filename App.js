@@ -12,12 +12,28 @@ import {
 } from '@react-navigation/bottom-tabs';
 
 //importing screens from the pages folder
-import HomeScreen from './pages/HomeScreen';
-import Shop from './pages/Shop';
-import Profile from './pages/Profile';
-import ResourcesScreen from './pages/ResourcesScreen';
-import CoursesScreen from './pages/CoursesScreen';
-import OpportunitiesScreen from './pages/OpportunitiesScreen';
+import HomeScreen from './screens/HomeScreen';
+import Shop from './screens/Shop';
+import Profile from './screens/Profile';
+import ResourcesScreen from './screens/ResourcesScreen';
+import CoursesScreen from './screens/CoursesScreen';
+import OpportunitiesScreen from './screens/OpportunitiesScreen';
+import Blogging from './screens/Blogging';
+import Building from './screens/Building_Effective';
+import Business from './screens/Business_Plan';
+import Career from './screens/Career_Mapping';
+import Digital from './screens/Digital_Literacy';
+import Email from './screens/Email_Communication';
+import Financial from './screens/Financial_Literacy';
+import HowToAce from './screens/How_to_Ace';
+import HowToNail from './screens/How_to_Nail';
+import HowToWrite from './screens/How_to_Write';
+import Marketing from './screens/Marketing';
+import PersonalLeadership from './screens/Personal_Leadership';
+import Personality from './screens/Personality_Types';
+import Risk from './screens/Risk ';
+import Skills from './screens/Skills_for_Public';
+import Blog from './topics/Blog';
 
 
 
@@ -37,15 +53,79 @@ function CoursesStack() {
         <Stack.Screen
           name="Courses"
           component={CoursesScreen}
-          options={{ title: 'Courses Page' }}/>
+          options={{ title: 'Select A Course' }}/>
         <Stack.Screen
           name="Resources"
           component={ResourcesScreen}
-          options={{ title: 'Resources Page' }} />
+          options={{ title: 'Back' }} />
         <Stack.Screen
           name="Opportunities"
           component={OpportunitiesScreen}
-          options={{ title: 'Opportunities Page' }} />
+          options={{ title: 'Back' }} />
+        <Stack.Screen
+          name="Blogging"
+          component={Blogging}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Building"
+          component={Building}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Business"
+          component={Business}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Career"
+          component={Career}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Digital"
+          component={Digital}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Email"
+          component={Email}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Financial"
+          component={Financial}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="HowToAce"
+          component={HowToAce}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="HowToNail"
+          component={HowToNail}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="HowToWrite"
+          component={HowToWrite}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Marketing"
+          component={Marketing}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="PersonalLeadership"
+          component={PersonalLeadership}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Personality"
+          component={Personality}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Risk"
+          component={Risk}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Skills"
+          component={Skills}
+          options={{ title: 'Back To Courses' }} />
+        <Stack.Screen
+          name="Blog"
+          component={Blog}
+          options={{ title: 'Back' }} />
       </Stack.Navigator>
   );
 }
@@ -90,6 +170,19 @@ function App() {
           component={CoursesStack}
           options={{
             tabBarLabel: 'Courses',
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons
+                name="bookmarks-outline"
+                color={color}
+                size={size}
+              />
+            ),
+          }}  />
+        <Tab.Screen
+          name="Blog"
+          component={Blog}
+          options={{
+            tabBarLabel: 'Blog',
             tabBarIcon: ({ color, size }) => (
               <Ionicons
                 name="bookmarks-outline"

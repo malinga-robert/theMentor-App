@@ -10,7 +10,7 @@ import {
   SafeAreaView,
   Linking 
 } from "react-native";
-import SearchOpp from "./SeachBar/SearchOpp";
+import SearchOpp from "../screens/SeachBar/SearchOpp";
 
 
 const OpportunitiesScreen = ({ navigation }) => {

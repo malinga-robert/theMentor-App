@@ -11,7 +11,7 @@ import {
   
   
 } from "react-native";
-import SearchCos from '../pages/SeachBar/SearchCos';
+import SearchCos from '../screens/SeachBar/SearchCos';
 
 
 
@@ -80,6 +80,9 @@ const CoursesScreen = ({ navigation }) => {
                     source={require("../assets/courses/Blogging_and_Writing.png")}
                   />
                 </View>
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Blogging')}
+                >
                 <Text
                   style={{
                     fontSize: 18,
@@ -90,6 +93,7 @@ const CoursesScreen = ({ navigation }) => {
                 >
                   Blogging and Writing
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder}>
                 <View style={styles.imgContainer}>
@@ -98,6 +102,9 @@ const CoursesScreen = ({ navigation }) => {
                     source={require("../assets/courses/Building_Effective_Teams.png")}
                   />
                 </View>
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Building')}
+                >
                 <Text
                   style={{
                     fontSize: 18,
@@ -108,114 +115,166 @@ const CoursesScreen = ({ navigation }) => {
                 >
                   Building Effective Teams
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Career-Mapping-For-Students.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Career')}
+                >
                 <Text style={styles.textHolder}>
                   Career Mapping For Students
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Create_a_Business_Plan_30_Minutes.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Business')}
+                >
                 <Text style={styles.textHolder}>
                   Create a Business Plan - 30 Minutes
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder1}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Digital_Literacy_to_Accelerate_Your_Career.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Digital')}
+                >
                 <Text style={styles.textHolder}>
                   Digital Literacy to Accelerate Your Career
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder1}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Email_Communication-Skills-to-Give-You-an-Edge.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Email')}
+                >
                 <Text style={styles.textHolder}>
                   Email Communication Skills to Give You an Edge
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Financial_Literacy_for_Beginners.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Financial')}
+                >
                 <Text style={styles.textHolder}>
                   Financial Literacy for Beginners
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder1}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/How_to_Ace_That_Online_Job_Application.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('HowToAce')}
+                >
                 <Text style={styles.textHolder}>
                   How to Ace That Online Job Application
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/How-to-Nail-That-Job-Interview.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('HowToNail')}
+                >
                 <Text style={styles.textHolder}>
                   How to Nail That Job Interview
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/How-to-Write-a-Winning-CV.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('HowToWrite')}
+                >
                 <Text style={styles.textHolder}>How to Write a Winning CV</Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Marketing_your_brand.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Marketing')}
+                >
                 <Text style={styles.textHolder}>Marketing your brand</Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder1}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Personal-Leadership-for-Professional-Growth.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('PersonalLeadership')}
+                >
                 <Text style={styles.textHolder}>
                   Personal Leadership for Professional Growth
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder1}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Personality-Types-For-Career-Advancement.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Personality')}
+                >
                 <Text style={styles.textHolder}>
                   Personality Types For Career Advancement
                 </Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Risk_and_Safeguarding.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Risk')}
+                >
                 <Text style={styles.textHolder}>Risk and Safeguarding</Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.imgHolder1}>
                 <Image
                   style={styles.imgContainer}
                   source={require("../assets/courses/Skills-for-Public-Speaking-and-Pitching.png")}
                 />
+                <TouchableOpacity
+                onPress = {()=> navigation.navigate('Skills')}
+                >
                 <Text
                   style={{
                     fontSize: 18,
@@ -226,6 +285,7 @@ const CoursesScreen = ({ navigation }) => {
                 >
                   Skills for Public Speaking and Pitching
                 </Text>
+                </TouchableOpacity>
               </View>
             </View>
           </View>
