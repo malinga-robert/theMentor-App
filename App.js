@@ -179,19 +179,6 @@ function App() {
             ),
           }}  />
         <Tab.Screen
-          name="Blog"
-          component={Blog}
-          options={{
-            tabBarLabel: 'Blog',
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons
-                name="bookmarks-outline"
-                color={color}
-                size={size}
-              />
-            ),
-          }}  />
-        <Tab.Screen
           name="ProfileStack"
           component={Profile}
           options={{
